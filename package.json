@@ -154,6 +154,11 @@
     "jsSrcsDir": "src",
     "android": {
       "javaPackageName": "com.fiareact"
+    },
+    "ios": {
+      "modulesProvider": {
+        "FiaReact": "RCTFiaReact"
+      }
     }
   },
   "create-react-native-library": {
