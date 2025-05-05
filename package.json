@@ -1,6 +1,6 @@
 {
   "name": "fia-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "FIA React Native by Fazpass.",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
