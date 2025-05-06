@@ -1,6 +1,5 @@
-import FIA from "fia-react"
+import FIA, { OtpPromise } from "fia-react"
 import type { FiaVerificationStatus } from "./data_objects/FiaVerificationStatus"
-import type { OtpPromise } from "../../src/objects/OtpPromise"
 
 export class FiaService {
 

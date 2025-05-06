@@ -2,7 +2,7 @@ import { Text, View, TextInput, Button, Alert } from 'react-native';
 import { FiaService } from '../FiaService';
 import { useState } from 'react';
 import { Styles } from './Styles';
-import { OtpAuthType } from '../../../src/enums/OtpAuthType';
+import { OtpAuthType } from 'fia-react';
 
 const fiaService = FiaService.getInstance();
 

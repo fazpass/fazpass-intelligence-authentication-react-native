@@ -1,5 +1,7 @@
 import FiaReact from './NativeFiaReact';
+import { OtpPromise } from './objects/OtpPromise';
 import { OtpSettings } from './objects/OtpSettings';
+import { OtpAuthType } from './enums/OtpAuthType';
 
 class FIA {
 
@@ -24,3 +26,5 @@ class FIA {
 }
 
 export default new FIA()
+
+export { OtpSettings, OtpPromise, OtpAuthType };

@@ -1,6 +1,7 @@
 # fia-react
 
 FIA React Native by Fazpass.
+Visit [official website](https://fazpass.com) for more information about the product and see documentation at [github documentation](https://github.com/fazpass/fia-documentation/blob/main/README.ReactNative.md) for more technical details.
 
 ## Installation
 
@@ -10,24 +11,61 @@ npm install fia-react
 
 ## Usage
 
+```ts
+import FIA, { OtpPromise, OtpAuthType } from 'fia-react';
 
-```js
-import { multiply } from 'fia-react';
+// initialize
+FIA.initialize("MERCHANT_KEY", "MERCHANT_APP_ID");
 
-// ...
+// request OTP with login purpose
+var otpPromise: OtpPromise
+FIA.otp().login("PHONE", (promise) => {
+    if (promise.hasException) {
+        let exception = promise.exception
+        // handle exception here
+        return
+    }
+    otpPromise = promise
+});
 
-const result = multiply(3, 7);
+// check OTP authentication type
+switch (otpPromise.authType) {
+    case OtpAuthType.Message:
+        // on message...
+        break
+    case OtpAuthType.Miscall:
+        // on miscall...
+        break
+    case OtpAuthType.He:
+        // on He...
+        break
+    case OtpAuthType.FIA:
+        // on FIA...
+        break
+};
+
+// validate Message or Miscall OTP
+otpPromise.validate(
+    "OTP", 
+    (err) => {
+        // on error
+    },
+    () => {
+        // on validated
+    }
+);
+
+// validate HE
+otpPromise.validateHe(
+    (err) => {
+        // on error
+    },
+    () => {
+        // on validated
+    }
+);
 ```
-
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
 
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+[MIT](LICENSE)
