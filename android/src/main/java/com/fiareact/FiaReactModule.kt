@@ -7,6 +7,7 @@ import com.facebook.react.module.annotations.ReactModule
 import com.fazpass.fia.FIAFactory
 import com.fazpass.fia.objects.OtpAuthType
 import com.fazpass.fia.objects.OtpPromise
+import android.util.Log
 
 private typealias TransactionId = String
 
@@ -37,17 +38,8 @@ class FiaReactModule(reactContext: ReactApplicationContext): NativeFiaReactSpec(
           putString("transactionId", promise.transactionId)
           putString("authType", promise.authType.toString())
           putBoolean("hasException", promise.hasException)
-
-          if (promise.hasException)
-            putString("exception", promise.exception.stackTraceToString())
-          else
-            putNull("exception")
-
-          if (promise.authType == OtpAuthType.Message
-            || promise.authType == OtpAuthType.Miscall)
-            putDouble("digitCount", promise.digitCount.toDouble())
-          else
-            putNull("digitCount")
+          putString("exception", promise.exception.stackTraceToString())
+          putDouble("digitCount", promise.digitCount.toDouble())
         }
         callback?.invoke(obj)
       }

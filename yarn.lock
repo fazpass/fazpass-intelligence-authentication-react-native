@@ -6349,8 +6349,8 @@ __metadata:
     eslint-config-prettier: ^10.1.1
     eslint-plugin-prettier: ^5.2.3
     jest: ^29.7.0
-    react: 19.0.0
-    react-native: 0.78.2
+    react: ">=18.1.0 <=19.0.0"
+    react-native: ">=0.70.15 <=0.78.2"
     react-native-builder-bob: ^0.40.5
     react-native-monorepo-config: ^0.1.7
     release-it: ^17.10.0
@@ -10900,7 +10900,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native@npm:0.78.2":
+"react-native@npm:0.78.2, react-native@npm:>=0.70.15 <=0.78.2":
   version: 0.78.2
   resolution: "react-native@npm:0.78.2"
   dependencies:
@@ -10959,7 +10959,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:19.0.0":
+"react@npm:19.0.0, react@npm:>=18.1.0 <=19.0.0":
   version: 19.0.0
   resolution: "react@npm:19.0.0"
   checksum: 86de15d85b2465feb40297a90319c325cb07cf27191a361d47bcfe8c6126c973d660125aa67b8f4cbbe39f15a2f32efd0c814e98196d8e5b68c567ba40a399c6
