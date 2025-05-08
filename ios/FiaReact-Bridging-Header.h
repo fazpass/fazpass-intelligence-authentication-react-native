@@ -3,3 +3,4 @@
 //
 
 #import <React-RCTAppDelegate/RCTDefaultReactNativeFactoryDelegate.h>
+#import <React/RCTBridgeModule.h>
