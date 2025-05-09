@@ -17,7 +17,7 @@ import FiaIOS
   }
   
   var promises: [String:OtpPromise] = [:]
-  @objc public func otp(for purpose: String, phone: String, callback: @escaping RCTResponseSenderBlock) {
+  @objc public func otp(for purpose: String, phone: String, callback: @escaping ([Any]) -> Void) {
     let promising: (OtpPromise) -> Void = { promise in
       self.promises[promise.transactionId] = promise
       
@@ -76,44 +76,44 @@ import FiaIOS
     }
   }
   
-  @objc func validateOtp(
+  @objc public func validateOtp(
     for transactionId: String,
     otp: String,
-    onError: RCTResponseSenderBlock?,
-    onValidated: @escaping RCTResponseSenderBlock
+    onError: @escaping ([Any]) -> Void,
+    onValidated: @escaping ([Any]) -> Void
   ) {
     guard let promise = promises[transactionId] else {
-      onError?(["No such transaction"])
+      onError(["No such transaction"])
       return
     }
     promise.validate(
       otp,
-      { err in onError?([err.localizedDescription]) },
+      { err in onError([err.localizedDescription]) },
       { onValidated([]) }
     )
   }
   
-  @objc func validateHE(
+  @objc public func validateHE(
     for transactionId: String,
-    onError: RCTResponseSenderBlock?,
-    onValidated: @escaping RCTResponseSenderBlock
+    onError: @escaping ([Any]) -> Void,
+    onValidated: @escaping ([Any]) -> Void
   ) {
     guard let promise = promises[transactionId] else {
-      onError?(["No such transaction"])
+      onError(["No such transaction"])
       return
     }
     promise.validateHE(
-      { err in onError?([err.localizedDescription]) },
+      { err in onError([err.localizedDescription]) },
       { onValidated([]) }
     )
   }
   
-  @objc func listenToMiscall(
+  @objc public func listenToMiscall(
     for transactionId: String,
-    callback: @escaping RCTResponseSenderBlock
+    callback: @escaping ([Any]) -> Void
   ) {}
   
-  @objc func forgetPromise(for transactionId: String) {
+  @objc public func forgetPromise(for transactionId: String) {
     promises.removeValue(forKey: transactionId)
   }
 }

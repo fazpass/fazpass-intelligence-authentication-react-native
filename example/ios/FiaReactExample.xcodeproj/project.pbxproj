@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		3AA94377665262C31A86586A /* libPods-FiaReactExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0A469741CE98C3B6513444 /* libPods-FiaReactExample.a */; };
+		3B9AF2E60D83BF64500F8B68 /* libPods-FiaReactExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B08C0D2966924F0ACFE926 /* libPods-FiaReactExample.a */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		7A1DA13A24A7723EDAE9433D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -19,12 +19,12 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FiaReactExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FiaReactExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = FiaReactExample/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		530EEB9C628B5126DA289AC9 /* Pods-FiaReactExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiaReactExample.debug.xcconfig"; path = "Target Support Files/Pods-FiaReactExample/Pods-FiaReactExample.debug.xcconfig"; sourceTree = "<group>"; };
+		42E9A6019B4CC27868B42C9B /* Pods-FiaReactExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiaReactExample.debug.xcconfig"; path = "Target Support Files/Pods-FiaReactExample/Pods-FiaReactExample.debug.xcconfig"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FiaReactExample/AppDelegate.swift; sourceTree = "<group>"; };
-		7A0A469741CE98C3B6513444 /* libPods-FiaReactExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FiaReactExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FiaReactExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8912535CB27975DA751BC518 /* Pods-FiaReactExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiaReactExample.release.xcconfig"; path = "Target Support Files/Pods-FiaReactExample/Pods-FiaReactExample.release.xcconfig"; sourceTree = "<group>"; };
 		B0F8D9AB2DC827F800B2FDE1 /* FiaReactExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = FiaReactExample.entitlements; path = FiaReactExample/FiaReactExample.entitlements; sourceTree = "<group>"; };
-		EB8B127C710135C64833F194 /* Pods-FiaReactExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiaReactExample.release.xcconfig"; path = "Target Support Files/Pods-FiaReactExample/Pods-FiaReactExample.release.xcconfig"; sourceTree = "<group>"; };
+		B8B08C0D2966924F0ACFE926 /* libPods-FiaReactExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FiaReactExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA94377665262C31A86586A /* libPods-FiaReactExample.a in Frameworks */,
+				3B9AF2E60D83BF64500F8B68 /* libPods-FiaReactExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				7A0A469741CE98C3B6513444 /* libPods-FiaReactExample.a */,
+				B8B08C0D2966924F0ACFE926 /* libPods-FiaReactExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,8 +94,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				530EEB9C628B5126DA289AC9 /* Pods-FiaReactExample.debug.xcconfig */,
-				EB8B127C710135C64833F194 /* Pods-FiaReactExample.release.xcconfig */,
+				42E9A6019B4CC27868B42C9B /* Pods-FiaReactExample.debug.xcconfig */,
+				8912535CB27975DA751BC518 /* Pods-FiaReactExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -107,13 +107,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FiaReactExample" */;
 			buildPhases = (
-				EAEEA536B5A32EF0FC2C2E70 /* [CP] Check Pods Manifest.lock */,
+				7953785051053BBBBF691F58 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				5CD72CF1BB230678DCB559BA /* [CP] Embed Pods Frameworks */,
-				0BF76C165B9B79A94DE968EB /* [CP] Copy Pods Resources */,
+				2C659179FFCAB3BB9C48BF9E /* [CP] Embed Pods Frameworks */,
+				0B444D51099C248F07416217 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,7 +185,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		0BF76C165B9B79A94DE968EB /* [CP] Copy Pods Resources */ = {
+		0B444D51099C248F07416217 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,7 +202,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FiaReactExample/Pods-FiaReactExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5CD72CF1BB230678DCB559BA /* [CP] Embed Pods Frameworks */ = {
+		2C659179FFCAB3BB9C48BF9E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,7 +219,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FiaReactExample/Pods-FiaReactExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EAEEA536B5A32EF0FC2C2E70 /* [CP] Check Pods Manifest.lock */ = {
+		7953785051053BBBBF691F58 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,7 +257,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 530EEB9C628B5126DA289AC9 /* Pods-FiaReactExample.debug.xcconfig */;
+			baseConfigurationReference = 42E9A6019B4CC27868B42C9B /* Pods-FiaReactExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -286,7 +286,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB8B127C710135C64833F194 /* Pods-FiaReactExample.release.xcconfig */;
+			baseConfigurationReference = 8912535CB27975DA751BC518 /* Pods-FiaReactExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

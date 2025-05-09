@@ -8,7 +8,7 @@ PODS:
   - FBLazyVector (0.78.2)
   - FiaIOS (0.0.6):
     - DeviceIntelligenceIOS
-  - FiaReact (0.1.0):
+  - FiaReact (0.1.4):
     - DoubleConversion
     - FiaIOS
     - glog
@@ -1895,7 +1895,7 @@ SPEC CHECKSUMS:
   fast_float: 06eeec4fe712a76acc9376682e4808b05ce978b6
   FBLazyVector: e32d34492c519a2194ec9d7f5e7a79d11b73f91c
   FiaIOS: 199e0e2d8c0b1c9b19cfb28eafb2cf600fb1960b
-  FiaReact: f8d10bf6f36bc171c86a1ff02e42c6cb238b1ae7
+  FiaReact: 863dd0f1d9ada9572139a2798ae10aaa25e7635c
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: eb93e2f488219332457c3c4eafd2738ddc7e80b8
   hermes-engine: 2771b98fb813fdc6f92edd7c9c0035ecabf9fee7
